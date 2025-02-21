@@ -1,7 +1,9 @@
 name: First Workflow
 
 on: 
- issues:
+ push:
+  branches:
+    - master
  workflow_dispatch:
  
 jobs:
