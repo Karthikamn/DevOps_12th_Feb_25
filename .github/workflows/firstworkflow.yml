@@ -1,9 +1,9 @@
 name: First Workflow
 
 on: 
- push:
+ issues:
  workflow_dispatch:
-
+ 
 jobs:
  job1:
   runs-on: ubuntu-latest
