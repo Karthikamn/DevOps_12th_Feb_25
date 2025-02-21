@@ -10,9 +10,7 @@ jobs:
  job1:
   runs-on: ubuntu-latest
   steps:
-   - run: echo 'Hello'
- job2:
-  needs: job1
-  runs-on: windows-latest
-  steps:
-    - run: echo 'Hello for windows'
+  -  uses: actions/setup-java@v4.7.0
+     with:
+      java-version: '21'
+      distribution: 'oracle'
