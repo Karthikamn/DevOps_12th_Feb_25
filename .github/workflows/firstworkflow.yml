@@ -16,3 +16,4 @@ jobs:
   runs-on: windows-latest
   steps:
     - run: echo 'Hello for windows'
+    - run: echo 'Welcome'
