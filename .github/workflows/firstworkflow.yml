@@ -1,6 +1,8 @@
 name: First Workflow
 
-on: push
+on: 
+ push:
+ workflow_dispatch:
 
 jobs:
  job1:
@@ -8,6 +10,7 @@ jobs:
   steps:
    - run: echo 'Hello'
  job2:
+  needs: job1
   runs-on: windows-latest
   steps:
     - run: echo 'Hello for windows'
